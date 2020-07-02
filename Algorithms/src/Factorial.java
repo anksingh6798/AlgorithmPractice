@@ -1,3 +1,5 @@
+//this program finds the factorial
+
 import java.util.Scanner;
 
 public class Factorial {
