@@ -1,6 +1,8 @@
 //Given an array of Integers ,return how many of them contain an even number of digits.
 
 
+import static java.lang.Math.log10;
+
 public class EvenNumberDigits {
 
     public static int evenDigits(int[] arr)
@@ -8,8 +10,9 @@ public class EvenNumberDigits {
         int count=0;
         for(int i=0;i<arr.length;i++)
         {
-          String num=String.valueOf(arr[i]);
-          if((num.length())%2==0)
+          //String num=String.valueOf(arr[i]);
+            int len_of_num = (int) (log10(arr[i]))+1;
+          if((len_of_num)%2==0)
             {
                 count++;
             }
